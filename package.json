@@ -1,5 +1,5 @@
 {
-  "name": "crudspfx",
+  "name": "crud-share-point-framework",
   "version": "0.0.1",
   "private": true,
   "main": "lib/index.js",

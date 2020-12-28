@@ -7,19 +7,19 @@ import {
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 
-import * as strings from 'CrudWebPartStrings';
-import Crud from './components/Crud';
-import { ICrudProps } from './components/ICrudProps';
+import * as strings from 'CreateProjectWebPartStrings';
+import CreateProject from './components/CreateProject';
+import { ICreateProjectProps } from './components/ICreateProjectProps';
 
-export interface ICrudWebPartProps {
+export interface ICreateProjectWebPartProps {
   description: string;
 }
 
-export default class CrudWebPart extends BaseClientSideWebPart<ICrudWebPartProps> {
+export default class CreateProjectWebPart extends BaseClientSideWebPart<ICreateProjectWebPartProps> {
 
   public render(): void {
-    const element: React.ReactElement<ICrudProps> = React.createElement(
-      Crud,
+    const element: React.ReactElement<ICreateProjectProps> = React.createElement(
+      CreateProject,
       {
         description: this.properties.description
       }

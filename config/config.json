@@ -2,17 +2,26 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "crud-web-part": {
+    "register-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/crud/CrudWebPart.js",
-          "manifest": "./src/webparts/crud/CrudWebPart.manifest.json"
+          "entrypoint": "./lib/webparts/register/RegisterWebPart.js",
+          "manifest": "./src/webparts/register/RegisterWebPart.manifest.json"
+        }
+      ]
+    },
+    "create-project-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/createProject/CreateProjectWebPart.js",
+          "manifest": "./src/webparts/createProject/CreateProjectWebPart.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "CrudWebPartStrings": "lib/webparts/crud/loc/{locale}.js"
+    "RegisterWebPartStrings": "lib/webparts/register/loc/{locale}.js",
+    "CreateProjectWebPartStrings": "lib/webparts/createProject/loc/{locale}.js"
   }
 }

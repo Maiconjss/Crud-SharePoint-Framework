@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "crudspfx-client-side-solution",
-    "id": "c4ef0d8d-0cd5-4414-a0d8-93fba822944e",
+    "name": "crud-share-point-framework-client-side-solution",
+    "id": "91898941-b830-4402-a043-b81e7d1d9f80",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
-    "isDomainIsolated": false,
+    "isDomainIsolated": true,
     "developer": {
       "name": "",
       "websiteUrl": "",
@@ -16,6 +16,6 @@
     }
   },
   "paths": {
-    "zippedPackage": "solution/crudspfx.sppkg"
+    "zippedPackage": "solution/crud-share-point-framework.sppkg"
   }
 }
